@@ -20,7 +20,7 @@ allure-report/
 allure-results/
 
 # WDIO generated folders
-.results/
+results/
 *.tmp
 
 # OS-specific
