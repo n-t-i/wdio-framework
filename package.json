@@ -1,5 +1,5 @@
 {
-  "name": "my-wdio-framework",
+  "name": "wdio-framework",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "@wdio/spec-reporter": "^9.11.0"
   },
   "dependencies": {
-    "@wdio/globals": "^9.12.1"
+    "@wdio/globals": "^9.12.1",
+    "chai": "^5.2.0"
   }
 }

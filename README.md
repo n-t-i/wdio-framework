@@ -45,7 +45,7 @@
 1. Run all tests locally:
 > npm run wdio
 
-2. Run a specific test file:
+2. Run a specific test file locally:
 > npx wdio run ./wdio.conf.js --spec ./test/specs/{your_test_name_here}.js
 
 3. Generate Allure report:
