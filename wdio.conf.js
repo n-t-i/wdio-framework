@@ -51,15 +51,25 @@ exports.config = {
     //
     capabilities: [
         {
-        browserName: 'chrome'
-    },
-    //     {
-    //     browserName: 'firefox'
-    // },
-    //     {
-    //     browserName: 'MicrosoftEdge'
-    // }
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--window-size=1600,900']
+            }
+        },
+        // {
+        //     browserName: 'firefox',
+        //     'moz:firefoxOptions': {
+        //         args: ['--width=1600', '--height=900']
+        //     }
+        // },
+        // {
+        //     browserName: 'MicrosoftEdge',
+        //     'ms:edgeOptions': {
+        //         args: ['--window-size=1600,900']
+        //     }
+        // }
     ],
+
 
 
 
@@ -155,7 +165,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        // retries: 2 // ✅ Will retry each failed test up to 2 times(remove this line if retries are not needed)
     },
 
     //
