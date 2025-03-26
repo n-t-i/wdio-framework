@@ -49,6 +49,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
+
     capabilities: [
         {
             browserName: 'chrome',
@@ -59,19 +60,19 @@ exports.config = {
                 ]
             }
         },
-        // {
-        //     browserName: 'firefox',
-        //     'moz:firefoxOptions': {
-        //         args: ['--width=1600', '--height=900']
-        //     }
-        // },
-        // {
-        //     browserName: 'MicrosoftEdge',
-        //     'ms:edgeOptions': {
-        //         args: ['--window-size=1600,900']
-        //     }
-        // }
-    ],
+    //     {
+    //         browserName: 'firefox',
+    //         'moz:firefoxOptions': {
+    //             args: ['--width=1600', '--height=900']
+    //         }
+    //     },
+    //     {
+    //         browserName: 'MicrosoftEdge',
+    //         'ms:edgeOptions': {
+    //             args: ['--window-size=1600,900']
+    //         }
+    //     }
+    // ],
 
 
 
