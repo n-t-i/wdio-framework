@@ -49,17 +49,31 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
+
     capabilities: [
         {
-        browserName: 'chrome'
-    },
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: [
+                    '--window-size=1600,900',
+                    '--disable-blink-features=AutomationControlled'
+                ]
+            }
+        },
     //     {
-    //     browserName: 'firefox'
-    // },
+    //         browserName: 'firefox',
+    //         'moz:firefoxOptions': {
+    //             args: ['--width=1600', '--height=900']
+    //         }
+    //     },
     //     {
-    //     browserName: 'MicrosoftEdge'
-    // }
+    //         browserName: 'MicrosoftEdge',
+    //         'ms:edgeOptions': {
+    //             args: ['--window-size=1600,900']
+    //         }
+    //     }
     ],
+
 
 
 
@@ -155,7 +169,8 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        // retries: 2 // ✅ Will retry each failed test up to 2 times(remove this line if retries are not needed)
     },
 
     //
