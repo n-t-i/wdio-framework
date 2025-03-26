@@ -53,7 +53,10 @@ exports.config = {
         {
             browserName: 'chrome',
             'goog:chromeOptions': {
-                args: ['--window-size=1600,900']
+                args: [
+                    '--window-size=1600,900',
+                    '--disable-blink-features=AutomationControlled'
+                ]
             }
         },
         // {
