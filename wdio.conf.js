@@ -72,7 +72,7 @@ exports.config = {
     //             args: ['--window-size=1600,900']
     //         }
     //     }
-    // ],
+    ],
 
 
 
