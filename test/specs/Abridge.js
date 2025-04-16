@@ -34,7 +34,6 @@ async function addAndVerifyCommentByIndex(index, commentText) {
     await pageTitle.waitForDisplayed();
 
     const rowSelector = '//tbody/tr';
-    let rows = await $$(rowSelector);
 
     let items = await $$('//tbody/tr');
     while (items.length < index) {
