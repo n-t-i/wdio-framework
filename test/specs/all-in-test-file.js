@@ -26,7 +26,7 @@ describe('Add to cart', () => {
 
         //check the logo is displayed
         /** @type {import('webdriverio').Element} */
-        const logoEl = await $(selectors.siteLogo);
+        const logoEl =  $(selectors.siteLogo);
         await logoEl.waitForDisplayed();
         await expect(logoEl).toBeDisplayed();
 
