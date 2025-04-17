@@ -9,6 +9,9 @@ const SELECTORS = {
     acceptCookiesBtn: '#onetrust-accept-btn-handler',
     discountIframe: '#attentive_creative',
     closeBannerBtn: '#closeIconContainer',
+    headerMenu_Men:'//*[text()="Men"]',
+    headerMenu_Men_Open: '//*[@src="//content.backcountry.com/promo_upload/bcs/2025/BC25_0057/Flyout_mens.jpg"]',
+    headerMenu_Men_OpenPants:'//a[text()="Pants"]',
 };
 
 /**
